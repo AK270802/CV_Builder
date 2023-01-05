@@ -1,0 +1,67 @@
+ABOUT US
+
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					About window = new About();
+					window.frmAbout.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+
+LOGIN
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmLogin = new JFrame();
+		frmLogin.getContentPane().setBackground(new Color(128, 0, 128));
+		frmLogin.setType(Type.UTILITY);
+		frmLogin.setTitle("Login");
+		frmLogin.setBounds(400, 100, 562, 429);
+		ImageIcon icon1 = new ImageIcon(this.getClass().getResource("/icon.png"));
+		frmLogin.setIconImage(icon1.getImage());
+		frmLogin.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.BLACK);
+		panel.setBounds(222, 0, 324, 365);
+		frmLogin.getContentPane().add(panel);
+		panel.setLayout(null);
+
+        JButton btnLogin = new JButton("Login>>");
+
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			String un=user.getText();
+			@SuppressWarnings("deprecation")
+			String ps=pwdPassword.getText();
+
+
+RESUME UI 
+
+private void initialize() {
+		frmResumebuilder = new JFrame();
+		frmResumebuilder.getContentPane().setBackground(new Color(135, 206, 250));
+		frmResumebuilder.getContentPane().addMouseWheelListener(new MouseWheelListener() {
+			public void mouseWheelMoved(MouseWheelEvent e) {
+				
+			}
+	JLabel lblEmail = new JLabel("E-Mail:");
+		lblEmail.setBounds(10, 119, 72, 25);
+		panel.add(lblEmail);
+
+        btnAttachPhoto.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnAttachPhoto.setBackground(new Color(119, 136, 153));
+		btnAttachPhoto.setBounds(1102, 320, 117, 29);
+		frmResumebuilder.getContentPane().add(btnAttachPhoto);
+
+
+
